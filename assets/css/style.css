@@ -469,55 +469,82 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: var(--white-color);
-}
-.preloader .loading, .preloader .loading-wrapper {
-  height: 100px;
-  position: relative;
-  width: 100px;
-  border-radius: 100%;
-}
-.preloader .loading-wrapper {
-  margin: 40px auto;
-}
-.preloader .loading-wrapper .loading {
-  border: 1px solid transparent;
-  border-color: transparent var(--primary-black-color) transparent var(--primary-black-color);
-  -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
-          animation: rotate-loading 1.5s linear 0s infinite normal;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-.preloader .loading-wrapper #loading-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.preloader .loading-wrapper #loading-icon img {
-  width: 40px;
+  background-color: #f8f9fa;
 }
 
-@-webkit-keyframes rotate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+.eden-logo {
+  width: 280px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+  -webkit-clip-path: inset(0 100% 0 0);
+          clip-path: inset(0 100% 0 0);
+  opacity: 0;
+  -webkit-animation: clipReveal 1.8s cubic-bezier(0.42, 0, 0.58, 1) forwards, zoomIn 1.8s cubic-bezier(0.42, 0, 0.58, 1) forwards, pulseZoom 3s ease-in-out 1.8s infinite;
+          animation: clipReveal 1.8s cubic-bezier(0.42, 0, 0.58, 1) forwards, zoomIn 1.8s cubic-bezier(0.42, 0, 0.58, 1) forwards, pulseZoom 3s ease-in-out 1.8s infinite;
+}
+
+@-webkit-keyframes clipReveal {
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
   }
 }
 
-@keyframes rotate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+@keyframes clipReveal {
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
   }
-  100% {
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes pulseZoom {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+}
+
+@keyframes pulseZoom {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+}
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
