@@ -7989,4 +7989,141 @@ transform: rotate(360deg);
   height: auto;
 }
 
+/* =====================
+   ESG Policy Page CSS
+===================== */
+.esg-pillar-card {
+  background-color: var(--white-color);
+  border-radius: 30px;
+  padding: 35px 40px 40px;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+.esg-pillar-card:hover {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+.esg-pillar-card .pillar-header {
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 30px;
+}
+.esg-pillar-card .pillar-header .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255,65,54,0.08);
+  margin-bottom: 20px;
+}
+.esg-pillar-card .pillar-header .icon i {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+.esg-pillar-card .pillar-header h3 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.esg-pillar-card .sub-section h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 12px;
+}
+.esg-pillar-card .sub-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.esg-pillar-card .sub-section ul li {
+  position: relative;
+  padding-left: 15px;
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.esg-pillar-card .sub-section ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+.esg-pillar-card .sub-section ul li:before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+/* Accountability */
+.accountability-sec .accountability-image img {
+  border-radius: 30px;
+  width: 100%;
+}
+
+/* Approach Cards */
+.approach-sec .approach-card {
+  background-color: var(--white-color);
+  border-radius: 30px;
+  padding: 35px 30px 30px;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+.approach-sec .row {
+  row-gap: 30px;
+}
+.approach-sec .approach-card:hover {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+.approach-sec .approach-card .card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255,65,54,0.08);
+  margin-bottom: 20px;
+}
+.approach-sec .approach-card .card-icon i {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+.approach-sec .approach-card h5 {
+  font-size: 20px;
+  margin-bottom: 18px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+.approach-sec .approach-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.approach-sec .approach-card ul li {
+  position: relative;
+  padding-left: 15px;
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.approach-sec .approach-card ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.approach-sec .approach-card ul li:before {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
 /*# sourceMappingURL=style.css.map */
