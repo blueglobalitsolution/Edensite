@@ -1,0 +1,43 @@
+{
+    "sections": {
+        "project_overview": "Redevelopment of a heritage site into a modern care home facility while preserving historic character.",
+        "heritage_preservation": {
+            "goal": "Respect and retain key architectural features of the original building.",
+            "methods": [
+                "Sensitive restoration of façades",
+                "Integration of historic design elements into new structures"
+            ]
+        },
+        "care_home_design": {
+            "focus": "Provide high-quality residential and healthcare facilities.",
+            "features": [
+                "Modern accommodation units",
+                "Specialized healthcare spaces",
+                "Communal areas for residents"
+            ]
+        },
+        "community_benefits": {
+            "impact": "Enhances local area by combining heritage conservation with modern living needs.",
+            "contribution": [
+                "Revitalization of unused heritage asset",
+                "Creation of employment opportunities",
+                "Provision of essential care services"
+            ]
+        },
+        "sustainability": {
+            "approach": "Fabric-first strategy to minimize embodied carbon.",
+            "principles": [
+                "Reuse of existing structures",
+                "Energy-efficient design"
+            ]
+        },
+        "landscape_design": {
+            "elements": [
+                "Green courtyards",
+                "Accessible pathways",
+                "Outdoor communal spaces"
+            ],
+            "purpose": "Improve resident wellbeing and integrate with surrounding environment."
+        }
+    }
+}

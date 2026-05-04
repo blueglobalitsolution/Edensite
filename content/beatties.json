@@ -1,0 +1,36 @@
+{
+    "sections": {
+        "project_overview": "Transformation of the historic Beatties department store in Wolverhampton into a mixed-use development.",
+        "heritage_preservation": {
+            "description": "Sensitive restoration of the 1877 Art Deco façade and convex corner.",
+            "goal": "Maintain the building as a historic anchor for the high street."
+        },
+        "mixed_use_transformation": {
+            "residential_units": "Over 300 modern apartments",
+            "commercial_space": "Ground-floor retail and commercial areas"
+        },
+        "sustainability": {
+            "approach": "Fabric-first strategy",
+            "benefit": "Retention of existing structures to reduce embodied carbon"
+        },
+        "urban_design": {
+            "arcade": "Reinstatement of historic internal arcade",
+            "connectivity": "Pedestrian link between Victoria Street and School Street"
+        },
+        "public_realm": {
+            "features": [
+                "Central Parkland Walk",
+                "Private Courtyard Gardens"
+            ],
+            "purpose": "Provide green space and enhance resident wellbeing"
+        },
+        "community_impact": {
+            "role": "Catalyst for city centre regeneration",
+            "model": "Integrated living, working, and social environment"
+        },
+        "safety_accessibility": {
+            "design": "Dual-core residential layout",
+            "standards": "Highest safety and accessibility compliance"
+        }
+    }
+}

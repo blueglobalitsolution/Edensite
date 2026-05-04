@@ -1,0 +1,47 @@
+{
+    "sections": {
+        "projects": [
+            {
+                "title": "Ingestre Road",
+                "location": "Kentish Town, London",
+                "type": "Assisted Living",
+                "details": {
+                    "GDV": "£44m",
+                    "former_use": "Former Care Home",
+                    "ownership": "Local Authority Disposal",
+                    "context": "Significant regeneration estate within Camden",
+                    "facility": "50 apartment retirement living facility",
+                    "community_focus": "Keeping seniors local to where they grew up"
+                }
+            },
+            {
+                "title": "Brockley Hill",
+                "location": "Stanmore, London",
+                "type": "Care Home",
+                "details": {
+                    "GDV": "£23m",
+                    "former_use": "Former Staff House",
+                    "adjacency": "Adjoining the Royal National Orthopaedic Hospital",
+                    "environment": "Part Green Belt",
+                    "heritage": [
+                        "Archeological Interest",
+                        "Scheduled Ancient Monument"
+                    ],
+                    "facility": "70 bed care home (STPP)"
+                }
+            },
+            {
+                "title": "Pearl House",
+                "location": "Newbury",
+                "type": "Retirement Apartments and Care Home",
+                "details": {
+                    "GDV": "£24m",
+                    "former_use": "Former Care Home Retail store",
+                    "location_type": "High Street Location",
+                    "development": "60 apartment retirement apartments with consent for a 68-bed care home on adjoining land",
+                    "sustainability": "Sustainable location with great commuter links"
+                }
+            }
+        ]
+    }
+}
