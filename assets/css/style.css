@@ -976,7 +976,7 @@ label {
 /*  Header Area */
 .header-area {
   position: relative;
-  z-index: 9999;
+  z-index: 10000;
 }
 
 /* Header Navigation */
@@ -3965,6 +3965,37 @@ label {
   color: var(--primary-color);
 }
 
+/* Project Card Content Styles */
+.renvia-project-item.style-four .project-content .project-type {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: rgba(200, 155, 64, 0.1);
+  border-radius: 30px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.renvia-project-item.style-four .project-content p {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+.renvia-project-item.style-four .project-content .project-highlights {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+.renvia-project-item.style-four .project-content .project-highlights strong {
+  font-style: normal;
+  color: var(--heading-color);
+}
+
 /* Project Slider CSS */
 .project-slider .renvia-project-item.style-two .project-thumbnail .project-content {
   visibility: hidden;
@@ -4064,6 +4095,11 @@ label {
   }
 }
 
+.projects-item-filter {
+  position: relative;
+  z-index: 100;
+}
+
 .projects-item-filter .nice-select {
   padding: 20px 25px;
   border-radius: 50px;
@@ -4084,6 +4120,10 @@ label {
 }
 .projects-item-filter .theme-btn {
   width: 100%;
+}
+
+.projects-item-filter .nice-select .list {
+  z-index: 99;
 }
 
 .projects-wrapper .row {
