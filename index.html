@@ -86,7 +86,28 @@
     <!--====== Start Overlay ======-->
     <div class="offcanvas__overlay"></div>
     <!--=== Start  Header Area  ===-->
-    <header class="header-area header-two">
+    <style>
+        .homepage-header .header-navigation .main-menu ul > li > a {
+            color: var(--heading-color) !important;
+        }
+        .homepage-header .header-navigation .main-menu ul > li > a:hover {
+            color: var(--primary-color) !important;
+        }
+        .homepage-header .header-navigation .nav-right-item .navbar-toggler {
+            border-color: rgba(0, 0, 0, 0.7) !important;
+        }
+        .homepage-header .header-navigation .nav-right-item .navbar-toggler span {
+            background-color: var(--heading-color) !important;
+        }
+        .homepage-header .header-navigation .nav-right-item .offcanvas-toggle i {
+            color: var(--heading-color) !important;
+        }
+        .homepage-header.sticky {
+            background-color: var(--white-color) !important;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+    <header class="header-area header-two homepage-header">
         <!--====  Header Navigation  ===-->
         <div class="container-fluid">
             <div class="header-navigation">
@@ -94,7 +115,7 @@
                 <div class="primary-menu">
                     <!--====  Site Branding  ===-->
                     <div class="site-branding">
-                        <a href="index.html" class="brand-logo"><img src="images/homepage/logo-white.png"
+                        <a href="index.html" class="brand-logo"><img src="images/homepage/logo-main.png"
                                 alt="Brand Logo"></a>
                     </div>
                     <!--=== Main Menu ===-->
@@ -162,7 +183,7 @@
         <div id="smooth-content">
             <main>
                 <!--======  Start Hero Section  ======-->
-                <section class="renvoa-hero_two bg_cover" data-src="assets/images/home-two/hero/hero-bg.jpg">
+                <section class="renvoa-hero_two bg_cover" data-src="assets/images/home-two/hero/eden-banner.png">
 
                     <div class="shape-one"><span></span></div>
                     <div class="container-fluid">
@@ -172,11 +193,14 @@
                                 <div class="hero-content">
                                     <span class="tag-line" data-aos="fade-down" data-aos-duration="2000">Premium
                                         Property Development · Est. London</span>
-                                    <h1 class="text-anm">Crafting exceptional living spaces</h1>
-                                    <p data-aos="fade-up" data-aos-duration="2200">A specialist developer delivering
+                                    <h1 class="text-anm" style="color: black !important;">Crafting exceptional living
+                                        spaces</h1>
+                                    <p data-aos="fade-up" data-aos-duration="2200" style="color: black !important;">A
+                                        specialist developer delivering
                                         challenging, complex projects across retirement living, assisted care, and
                                         residential — with a combined GDV exceeding £250 million.</p>
-                                    <div class="hero-button d-flex flex-wrap" style="gap: 20px;" data-aos="fade-up" data-aos-duration="2300">
+                                    <div class="hero-button d-flex flex-wrap" style="gap: 20px;" data-aos="fade-up"
+                                        data-aos-duration="2300">
                                         <a href="what-we-do.html" class="theme-btn style-one">What We Do <i
                                                 class="far fa-arrow-right"></i></a>
                                         <a href="current-projects.html" class="theme-btn style-one">Projects <i

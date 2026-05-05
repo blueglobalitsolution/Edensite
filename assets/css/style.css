@@ -2039,7 +2039,7 @@ transform: rotate(360deg);
   }
 }
 
-.renvoa-hero_two:after {
+/* .renvoa-hero_two:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -2048,6 +2048,24 @@ transform: rotate(360deg);
   height: 100%;
   background-color: rgba(28, 28, 37, 0.97);
   z-index: -1;
+} */
+
+.renvoa-hero_two:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+
+  background: radial-gradient(circle at left center,
+      rgba(255, 255, 255, 0.95) 5%,
+      rgba(255, 255, 255, 0.85) 30%,
+      rgba(180, 180, 180, 0.5) 55%,
+      rgba(167, 167, 167, 0.1) 75%,
+      rgba(173, 173, 173, 0) 90%);
 }
 
 .renvoa-hero_two .container-fluid {
@@ -7999,14 +8017,17 @@ transform: rotate(360deg);
   height: 100%;
   transition: box-shadow 0.3s ease;
 }
+
 .esg-pillar-card:hover {
-  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
+
 .esg-pillar-card .pillar-header {
   padding-bottom: 25px;
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 30px;
 }
+
 .esg-pillar-card .pillar-header .icon {
   width: 60px;
   height: 60px;
@@ -8014,28 +8035,33 @@ transform: rotate(360deg);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255,65,54,0.08);
+  background-color: rgba(255, 65, 54, 0.08);
   margin-bottom: 20px;
 }
+
 .esg-pillar-card .pillar-header .icon i {
   font-size: 24px;
   color: var(--primary-color);
 }
+
 .esg-pillar-card .pillar-header h3 {
   font-size: 24px;
   margin-bottom: 0;
 }
+
 .esg-pillar-card .sub-section h6 {
   font-size: 16px;
   font-weight: 700;
   color: var(--heading-color);
   margin-bottom: 12px;
 }
+
 .esg-pillar-card .sub-section ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .esg-pillar-card .sub-section ul li {
   position: relative;
   padding-left: 15px;
@@ -8044,9 +8070,11 @@ transform: rotate(360deg);
   font-size: 14px;
   line-height: 1.7;
 }
+
 .esg-pillar-card .sub-section ul li:not(:last-child) {
   margin-bottom: 8px;
 }
+
 .esg-pillar-card .sub-section ul li:before {
   position: absolute;
   top: 8px;
@@ -8073,12 +8101,15 @@ transform: rotate(360deg);
   transition: box-shadow 0.3s ease;
   margin-bottom: 30px;
 }
+
 .approach-sec .row {
   row-gap: 30px;
 }
+
 .approach-sec .approach-card:hover {
-  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
+
 .approach-sec .approach-card .card-icon {
   width: 50px;
   height: 50px;
@@ -8086,24 +8117,28 @@ transform: rotate(360deg);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255,65,54,0.08);
+  background-color: rgba(255, 65, 54, 0.08);
   margin-bottom: 20px;
 }
+
 .approach-sec .approach-card .card-icon i {
   font-size: 20px;
   color: var(--primary-color);
 }
+
 .approach-sec .approach-card h5 {
   font-size: 20px;
   margin-bottom: 18px;
   padding-bottom: 15px;
   border-bottom: 1px solid var(--border-color);
 }
+
 .approach-sec .approach-card ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .approach-sec .approach-card ul li {
   position: relative;
   padding-left: 15px;
@@ -8112,9 +8147,11 @@ transform: rotate(360deg);
   font-size: 15px;
   line-height: 1.7;
 }
+
 .approach-sec .approach-card ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .approach-sec .approach-card ul li:before {
   position: absolute;
   top: 9px;
@@ -8326,12 +8363,15 @@ transform: rotate(360deg);
   .what-lead {
     font-size: 18px;
   }
+
   .what-overview-image:before {
     display: none;
   }
+
   .what-process {
     grid-template-columns: 1fr;
   }
+
   .what-process-item {
     min-height: auto;
   }
@@ -8502,8 +8542,8 @@ transform: rotate(360deg);
   margin-right: 8px;
 }
 
-.available-developments-sec .development-card > p:not(.location),
-.available-developments-sec .details-box + p {
+.available-developments-sec .development-card>p:not(.location),
+.available-developments-sec .details-box+p {
   color: var(--text-color) !important;
   font-size: 15px !important;
   line-height: 1.75 !important;
@@ -8516,7 +8556,7 @@ transform: rotate(360deg);
   margin-top: auto;
 }
 
-.available-developments-sec .details-box > div {
+.available-developments-sec .details-box>div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8537,7 +8577,7 @@ transform: rotate(360deg);
   font-weight: 800 !important;
 }
 
-.available-developments-sec .details-box + p {
+.available-developments-sec .details-box+p {
   border-top: 1px dashed var(--border-color) !important;
   padding-top: 14px !important;
   margin-top: 14px !important;
@@ -8646,9 +8686,11 @@ transform: rotate(360deg);
   .find-search-wrapper {
     padding: 45px 35px 50px;
   }
+
   .personal-consultation-sec .container {
     padding: 65px 50px;
   }
+
   .personal-consultation-sec .container:after {
     width: 34%;
   }
@@ -8658,30 +8700,38 @@ transform: rotate(360deg);
   .find-search-sec {
     margin-top: 0;
   }
+
   .find-search-wrapper {
     border-radius: 20px;
     padding: 35px 22px 40px;
   }
+
   .available-developments-sec .development-card:before {
     height: 210px;
   }
+
   .available-developments-sec .identifier-box {
     top: 170px;
   }
+
   .personal-consultation-sec h2 {
     font-size: 32px !important;
   }
+
   .personal-consultation-sec {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
   }
+
   .personal-consultation-sec .container {
     border-radius: 24px;
     padding: 45px 26px;
   }
+
   .personal-consultation-sec .container:after {
     display: none;
   }
+
   .personal-consultation-sec .watermark {
     display: none;
   }
@@ -8698,7 +8748,7 @@ transform: rotate(360deg);
   margin-bottom: 90px !important;
 }
 
-.about-page .renvia-about_three .container > .row.align-items-center:last-child {
+.about-page .renvia-about_three .container>.row.align-items-center:last-child {
   align-items: flex-start !important;
 }
 
@@ -8932,7 +8982,7 @@ transform: rotate(360deg);
   margin-bottom: 16px;
 }
 
-.about-page .renvia-work-sec .content > p {
+.about-page .renvia-work-sec .content>p {
   color: var(--text-color);
   font-size: 18px;
   line-height: 1.75;
@@ -9015,12 +9065,15 @@ transform: rotate(360deg);
   .about-page .renvia-about_three .renvia-content-box {
     padding-right: 0;
   }
+
   .about-page .metric-card h2 {
     font-size: 36px !important;
   }
+
   .about-page .why-eden-list {
     grid-template-columns: 1fr;
   }
+
   .about-page .renvia-choose-sec .renvia-content-box {
     padding: 42px 36px;
   }
@@ -9030,21 +9083,26 @@ transform: rotate(360deg);
   .about-page .renvia-about_three {
     background: var(--white-color) !important;
   }
+
   .about-page .renvia-about_three .row.mb-100 {
     margin-bottom: 70px !important;
   }
+
   .about-page .metrics-wrapper {
     margin-top: 45px;
   }
+
   .about-page .renvia-about_three .renvia-image {
     margin-bottom: 50px;
   }
+
   .about-page .our-values-sec:before {
     height: 28%;
   }
 }
 
 @media screen and (max-width: 767.98px) {
+
   .about-page .renvia-about_three,
   .about-page .our-values-sec,
   .about-page .renvia-work-sec,
@@ -9052,34 +9110,44 @@ transform: rotate(360deg);
     padding-top: 80px !important;
     padding-bottom: 80px !important;
   }
+
   .about-page .about-text p {
     font-size: 16px;
   }
+
   .about-page .metric-card {
     min-height: auto;
     padding: 26px 22px !important;
   }
+
   .about-page .metric-card h2 {
     font-size: 32px !important;
   }
+
   .about-page .renvia-about_three .renvia-image:after {
     display: none;
   }
+
   .about-page .features-list .renvia-iconic-left-box {
     padding: 26px 22px;
   }
+
   .about-page .value-item {
     min-height: auto;
   }
+
   .about-page .renvia-counter-item h2 {
     font-size: 42px;
   }
-  .about-page .renvia-work-sec .content > p {
+
+  .about-page .renvia-work-sec .content>p {
     font-size: 16px;
   }
+
   .about-page .renvia-choose-sec .renvia-content-box {
     padding: 34px 24px;
   }
+
   .about-page .renvia-choose-sec .fs-18 {
     font-size: 16px !important;
     padding-left: 18px;
