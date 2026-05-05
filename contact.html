@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="assets/css/plugins/slick.css">
         <!--====== Magnific-popup css ======-->
         <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+        <!--====== Nice-select css ======-->
+        <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
         <!--====== Aos css ======-->
         <link rel="stylesheet" href="assets/css/plugins/aos.css">
         <!--====== Default css ======-->
@@ -115,7 +117,7 @@
                             </nav>
                             <!--=== Nav Button ===-->
                             <div class="theme-nav-button mt-20 d-block d-md-none">
-                                <a href="contact.html" class="theme-btn style-one">Get Started<i class="far fa-arrow-right"></i></a>
+                                <a href="find-your-home.html" class="theme-btn style-one">Find Your Home<i class="far fa-arrow-right"></i></a>
                             </div>
                             <!--===  Menu Bottom ===-->
                             <div class="theme-menu-bottom mt-50 d-block d-xl-none">
@@ -131,7 +133,7 @@
                         <!--=== Header Nav Right ===-->
                         <div class="nav-right-item">
                             <div class="nav-button d-none d-md-block">
-                                <a href="contact.html" class="theme-btn style-one">Get Started<i class="far fa-arrow-right"></i></a>
+                                <a href="find-your-home.html" class="theme-btn style-one">Find Your Home<i class="far fa-arrow-right"></i></a>
                             </div>
                             <div class="offcanvas-toggle">
                                 <i class="fas fa-th"></i>
@@ -225,42 +227,55 @@
                         <div class="container">
                             <!--=== Contact Wrapper ===-->
                             <div class="contact-wrapper" data-aos="fade-up" data-aos-duration="1000">
-                                <h3>Get In Touch</h3>
+                                <h3>Send us a message</h3>
                                 <form id="contact-form" class="contact-form" action="contact.php" method="POST">
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label><i class="far fa-user"></i></label>
-                                                <input type="text" class="form_control" placeholder="Your Name" name="name" required>
+                                                <input type="text" class="form_control" placeholder="First name" name="first_name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label><i class="far fa-user"></i></label>
+                                                <input type="text" class="form_control" placeholder="Last name" name="last_name" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label><i class="far fa-envelope"></i></label>
-                                                <input type="email" class="form_control" placeholder="Email Address" name="email" required>
+                                                <input type="email" class="form_control" placeholder="your@email.com" name="email_address" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label><i class="far fa-phone"></i></label>
-                                                <input type="text" class="form_control" placeholder="Phone Number" name="phone" required>
+                                                <input type="tel" class="form_control" placeholder="+44 ..." name="phone_number">
                                             </div>
                                         </div>
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-12">
                                             <div class="form-group">
-                                                <label><i class="far fa-subscript"></i></label>
-                                                <input type="text" class="form_control" placeholder="Subject" name="subject" required>
+                                                <label><i class="far fa-question-circle"></i></label>
+                                                <select class="form_control" name="enquiry_type" required>
+                                                    <option value="" disabled selected>Enquiry Type</option>
+                                                    <option value="Investment / Development Partnership">Investment / Development Partnership</option>
+                                                    <option value="Residential Enquiry — Find Your Home">Residential Enquiry — Find Your Home</option>
+                                                    <option value="Planning / Consultation">Planning / Consultation</option>
+                                                    <option value="Press & Media">Press & Media</option>
+                                                    <option value="General Enquiry">General Enquiry</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="form-group">
                                                 <label><i class="far fa-pen"></i></label>
-                                                <textarea class="form_control" placeholder="Message" name="message" rows="5" cols="8"></textarea>
+                                                <textarea class="form_control" placeholder="Tell us how we can help..." name="message" rows="5" cols="8" required></textarea>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="form-group text-center">
-                                                <button class="theme-btn style-one">Send Message Us <i class="far fa-arrow-right"></i></button>
+                                                <button class="theme-btn style-one" type="submit">Send Message <i class="far fa-arrow-right"></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -268,13 +283,7 @@
                             </div>
                         </div>
                     </section><!--======  End Contact Section  ======-->
-                    <section class="contact-map-sec" data-aos="fade-up" data-aos-duration="1000">
-                        <!--=== Map Box ===-->
-                        <div class="map-box mt-5 mt-xl-0" data-aos="fade-up" data-aos-duration="1200">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d158858.18281629318!2d-0.10159865!3d51.52864165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1706508986625!5m2!1sen!2suk" loading="lazy">
-                            </iframe>
-                        </div>
-                    </section>
+
                 </main>
                                                 <!--======  Start Footer  ======-->
                 <footer class="main-footer footer-v2 pt-120 overflow-hidden" data-src="assets/images/home-two/bg/footer-bg.jpg">
@@ -381,7 +390,11 @@
         <script src="assets/js/plugins/jquery.counterup.min.js"></script>
         <!--====== Aos js ======-->
         <script src="assets/js/plugins/aos.js"></script>
+        <!--====== Nice Select js ======-->
+        <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
         <!--====== Common js ======-->
         <script src="assets/js/theme.js"></script>
     </body>
 </html>
+
+
