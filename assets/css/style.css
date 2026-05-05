@@ -2283,20 +2283,20 @@ transform: rotate(360deg);
 
 /* Page Banner CSS */
 .page-hero {
-  padding: 250px 0 135px;
+  padding: 180px 0 100px;
   position: relative;
   z-index: 1;
 }
 
 @media screen and (max-width: 1199.98px) {
   .page-hero {
-    padding: 230px 0 100px;
+    padding: 160px 0 80px;
   }
 }
 
 @media (max-width: 767.98px) {
   .page-hero {
-    padding: 200px 0 100px;
+    padding: 140px 0 80px;
   }
 }
 
@@ -9162,3 +9162,77 @@ transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */
+/* Hide breadcrumbs on all pages */
+.page-hero .page-content ul {
+    display: none !important;
+}
+
+/* Custom Styles for About Page Update */
+:root {
+    --eden-gold: #c5a059;
+}
+
+.text-gold {
+    color: var(--eden-gold) !important;
+}
+
+.page-hero .page-content .sub-title {
+    display: block;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.page-hero .page-content h1 {
+    font-family: 'Cal Sans', sans-serif;
+    font-size: 72px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.page-hero .page-content p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Bracket Section Style */
+.bracket-section {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.bracket-container {
+    position: relative;
+    padding: 40px 60px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bracket-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    border-left: 8px solid #fff;
+    border-top: 8px solid #fff;
+    border-bottom: 8px solid #fff;
+}
+
+.bracket-container h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
