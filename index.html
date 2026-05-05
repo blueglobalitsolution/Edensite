@@ -87,24 +87,51 @@
     <div class="offcanvas__overlay"></div>
     <!--=== Start  Header Area  ===-->
     <style>
-        .homepage-header .header-navigation .main-menu ul > li > a {
+        .homepage-header .header-navigation .main-menu ul>li>a {
             color: var(--heading-color) !important;
         }
-        .homepage-header .header-navigation .main-menu ul > li > a:hover {
+
+        .homepage-header .header-navigation .main-menu ul>li>a:hover {
             color: var(--primary-color) !important;
         }
+
+        /* Top of page: White toggles for dark background */
         .homepage-header .header-navigation .nav-right-item .navbar-toggler {
-            border-color: rgba(0, 0, 0, 0.7) !important;
+            border-color: rgba(255, 255, 255, 0.7) !important;
         }
+
         .homepage-header .header-navigation .nav-right-item .navbar-toggler span {
-            background-color: var(--heading-color) !important;
+            background-color: var(--white-color) !important;
         }
+
+        .homepage-header .header-navigation .nav-right-item .offcanvas-toggle {
+            border-color: rgba(255, 255, 255, 0.7) !important;
+        }
+
         .homepage-header .header-navigation .nav-right-item .offcanvas-toggle i {
-            color: var(--heading-color) !important;
+            color: var(--white-color) !important;
         }
+
+        /* Sticky state: White background, black toggles */
         .homepage-header.sticky {
             background-color: var(--white-color) !important;
             box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .homepage-header.sticky .header-navigation .nav-right-item .navbar-toggler {
+            border-color: rgba(0, 0, 0, 0.7) !important;
+        }
+
+        .homepage-header.sticky .header-navigation .nav-right-item .navbar-toggler span {
+            background-color: var(--heading-color) !important;
+        }
+
+        .homepage-header.sticky .header-navigation .nav-right-item .offcanvas-toggle {
+            border-color: rgba(0, 0, 0, 0.7) !important;
+        }
+
+        .homepage-header.sticky .header-navigation .nav-right-item .offcanvas-toggle i {
+            color: var(--heading-color) !important;
         }
     </style>
     <header class="header-area header-two homepage-header">
@@ -217,13 +244,13 @@
                     <div class="shape shape-two"><img src="images/homepage/shape2.png" alt="shape"></div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-6 col-lg-10">
+                            <div class="col-xl-6 col-lg-10 d-flex flex-column">
                                 <!-- Renvia Image Box -->
-                                <div class="renvia-image-box mb-5 mb-xl-0" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="renvia-image">
-                                        <img src="images/homepage/about-img1.jpg" alt="about image">
+                                <div class="renvia-image-box mb-5 mb-xl-0 flex-grow-1" style="height: 100%; position: relative;" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="renvia-image h-100">
+                                        <img src="images/homepage/about-img1.jpg" alt="about image" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; border-radius: 30px;">
                                     </div>
-                                    <div class="renvia-content-box">
+                                    <div class="renvia-content-box" style="left: -30px; bottom: 30px;">
                                         <div class="content text-center text-white">
                                             <h2>100%</h2>
                                             <p>Client Retention Rate</p>
@@ -241,7 +268,12 @@
                                     </div>
                                     <p data-aos="fade-up" data-aos-duration="1000">Eden Projects is a specialist
                                         property developer with deep expertise in retirement living, assisted care
-                                        facilities, and complex residential schemes.</p>
+                                        facilities, and complex residential schemes. We combine entrepreneurial thinking
+                                        with institutional-grade execution.</p><br>
+                                    <p>Our unique team structure enables rapid decision-making while maintaining the
+                                        highest standards of delivery. From Grade II Listed buildings to Green Belt
+                                        developments, we embrace complexity where others see obstacle.</p>
+                                    <!-- 
                                     <div class="renvia-tabs" data-aos="fade-up" data-aos-duration="1000">
                                         <ul class="nav nav-tabs">
                                             <li>
@@ -317,6 +349,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    -->
                                 </div>
                             </div>
                         </div>
@@ -409,6 +442,11 @@
                     </div>
                 </section><!--======  End Service Section  ======-->
                 <!--======  Start Feature Section  ======-->
+                <style>
+                    .renvia-feature_two .row .col-md-6 .renvia-feature-item {
+                        height: calc(100% - 30px);
+                    }
+                </style>
                 <section class="renvia-feature_two pt-115 pb-90 overflow-hidden">
                     <div class="container">
                         <div class="row align-items-end">
@@ -433,9 +471,11 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-6 col-lg-10">
                                 <!-- Renvia Image Box -->
-                                <div class="renvia-image-box mb-30" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="renvia-image">
-                                        <img src="images/homepage/feature-img1.jpg" alt="feature image">
+                                <div class="renvia-image-box mb-30" style="height: calc(100% - 30px);"
+                                    data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="renvia-image" style="height: 100%;">
+                                        <img src="images/homepage/feature-img1.jpg" alt="feature image"
+                                            style="height: 100%; width: 100%; object-fit: cover; border-radius: 30px;">
                                     </div>
                                     <div class="renvia-avatar-box">
                                         <div class="avatar-list">
@@ -464,6 +504,48 @@
                                         <div class="renvia-feature-item style-two mb-30" data-aos="fade-up"
                                             data-aos-duration="1000">
                                             <div class="icon">
+                                                <img src="images/homepage/icon7.png" alt="icon">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="title">Complex Delivery</h5>
+                                                <p>Experienced in Grade II and Grade II* Listed projects requiring
+                                                    extensive refurbishment and specialist planning.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <!-- Renvia Feature Item -->
+                                        <div class="renvia-feature-item style-two mb-30" data-aos="fade-up"
+                                            data-aos-duration="1200">
+                                            <div class="icon">
+                                                <img src="images/homepage/icon1.png" alt="icon">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="title">Flexible Structure</h5>
+                                                <p>Simplified decision-making process and agility to respond to changing
+                                                    economic conditions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <!-- Renvia Feature Item -->
+                                        <div class="renvia-feature-item style-two mb-30" data-aos="fade-up"
+                                            data-aos-duration="1300">
+                                            <div class="icon">
+                                                <img src="images/homepage/icon2.png" alt="icon">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="title">Bespoke Exit Strategy</h5>
+                                                <p>Every project has a tailored strategy — Housing Association, Key
+                                                    Worker, BTR, Sales, or Shared Ownership.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <!-- Renvia Feature Item -->
+                                        <div class="renvia-feature-item style-two mb-30" data-aos="fade-up"
+                                            data-aos-duration="1400">
+                                            <div class="icon">
                                                 <img src="images/homepage/icon5.png" alt="icon">
                                             </div>
                                             <div class="content">
@@ -476,7 +558,7 @@
                                     <div class="col-md-6">
                                         <!-- Renvia Feature Item -->
                                         <div class="renvia-feature-item style-two mb-30" data-aos="fade-up"
-                                            data-aos-duration="1200">
+                                            data-aos-duration="1500">
                                             <div class="icon">
                                                 <img src="images/homepage/icon6.png" alt="icon">
                                             </div>
@@ -490,28 +572,14 @@
                                     <div class="col-md-6">
                                         <!-- Renvia Feature Item -->
                                         <div class="renvia-feature-item style-two mb-30" data-aos="fade-up"
-                                            data-aos-duration="1400">
-                                            <div class="icon">
-                                                <img src="images/homepage/icon7.png" alt="icon">
-                                            </div>
-                                            <div class="content">
-                                                <h5 class="title">Complex Delivery</h5>
-                                                <p>Experienced in Grade II and Grade II* Listed projects requiring
-                                                    extensive refurbishment and specialist planning.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <!-- Renvia Feature Item -->
-                                        <div class="renvia-feature-item style-two mb-30" data-aos="fade-up"
                                             data-aos-duration="1600">
                                             <div class="icon">
                                                 <img src="images/homepage/icon8.png" alt="icon">
                                             </div>
                                             <div class="content">
-                                                <h5 class="title">Sustainability</h5>
-                                                <p>Embedded ESG is a key deliverable, actively supported by our
-                                                    investors and senior debt providers.</p>
+                                                <h5 class="title">Sustainability Embedded</h5>
+                                                <p>ESG is a key deliverable, actively supported by our investors and
+                                                    senior debt providers.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -645,7 +713,7 @@
                                 <div class="renvia-team-item style-two mb-30" data-aos="fade-up"
                                     data-aos-duration="1000">
                                     <div class="member-image">
-                                        <img src="images/homepage/team-img1.jpg" alt="team image">
+                                        <img src="images/Team/team-img1.jpg" alt="team image">
                                         <div class="social-box">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -666,7 +734,7 @@
                                 <div class="renvia-team-item style-two mb-30" data-aos="fade-up"
                                     data-aos-duration="1200">
                                     <div class="member-image">
-                                        <img src="images/homepage/team-img2.jpg" alt="team image">
+                                        <img src="images/Team/team-img2.jpg" alt="team image">
                                         <div class="social-box">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -687,7 +755,7 @@
                                 <div class="renvia-team-item style-two mb-30" data-aos="fade-up"
                                     data-aos-duration="1400">
                                     <div class="member-image">
-                                        <img src="images/homepage/team-img3.jpg" alt="team image">
+                                        <img src="images/Team/team-img3.jpg" alt="team image">
                                         <div class="social-box">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -709,154 +777,17 @@
                 <!--======  Start Testimonial Section  ======-->
                 <section class="renvia-testimonial_two pt-115 pb-120 overflow-hidden">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-5 col-lg-10">
-                                <!-- Renvia Content Box -->
-                                <div class="renvia-content-box">
-                                    <!-- Section Title -->
-                                    <div class="section-title">
-                                        <span class="sub-title" data-aos="fade-down"
-                                            data-aos-duration="1000">Testimonial<img src="images/homepage/line2.png"
-                                                alt="line"></span>
-                                        <h2 class="text-anm">Trusted by Homeowners & Investors</h2>
-                                    </div>
-                                    <p data-aos="fade-up" data-aos-duration="1200">we are more than just real estate
-                                        advisors we are long term partners in your property journey. With decades of
-                                        experience</p>
-                                    <div class="renvia-avatar-box mt-60" data-aos="fade-up" data-aos-duration="1400">
-                                        <div class="avatar-list">
-                                            <ul>
-                                                <li><img src="assets/images/home-two/gallery/avatar-img1.jpg"
-                                                        alt="avatar-img"></li>
-                                                <li><img src="assets/images/home-two/gallery/avatar-img2.jpg"
-                                                        alt="avatar-img"></li>
-                                                <li><img src="assets/images/home-two/gallery/avatar-img3.jpg"
-                                                        alt="avatar-img"></li>
-                                                <li><img src="assets/images/home-two/gallery/avatar-img4.jpg"
-                                                        alt="avatar-img"></li>
-                                                <li><img src="assets/images/home-two/gallery/avatar-img5.jpg"
-                                                        alt="avatar-img"></li>
-                                                <li><span>50+</span></li>
-                                            </ul>
-                                        </div>
-                                        <div class="text-wrap">
-                                            <div class="number">4.9</div>
-                                            <div class="text">
-                                                <div class="ratings">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <p> 5k+ satisfied customers</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-7 col-lg-10">
-                                <!-- Testimonial Wrapper -->
-                                <div class="testimonial-wrapper" data-aos="fade-up" data-aos-duration="1200">
-                                    <!-- Testimonial Slider -->
-                                    <div class="testimonial-slider-two">
-                                        <!-- Renvia Testimonial Item -->
-                                        <div class="renvia-testimonial-item style-two">
-                                            <div class="testimonial-content">
-                                                <div class="quote-ratings-wrap">
-                                                    <div class="quote">
-                                                        <img src="images/homepage/quote.png" alt="quote">
-                                                    </div>
-                                                    <div class="ratings">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star-half"></i>
-                                                    </div>
-                                                </div>
-                                                <p>“ IT companies stay abreast of emerging technologies and industry
-                                                    trends remain competitive and provide”</p>
-                                                <div class="author-thumb-item">
-                                                    <div class="author-thumb">
-                                                        <img src="images/homepage/author-img1.jpg" alt="author image">
-                                                    </div>
-                                                    <div class="author-info">
-                                                        <h5>David Ade Smith</h5>
-                                                        <span class="position">Business Student</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Renvia Testimonial Item -->
-                                        <div class="renvia-testimonial-item style-two">
-                                            <div class="testimonial-content">
-                                                <div class="quote-ratings-wrap">
-                                                    <div class="quote">
-                                                        <img src="images/homepage/quote.png" alt="quote">
-                                                    </div>
-                                                    <div class="ratings">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star-half"></i>
-                                                    </div>
-                                                </div>
-                                                <p>“ IT companies stay abreast of emerging technologies and industry
-                                                    trends remain competitive and provide”</p>
-                                                <div class="author-thumb-item">
-                                                    <div class="author-thumb">
-                                                        <img src="images/homepage/author-img1.jpg" alt="author image">
-                                                    </div>
-                                                    <div class="author-info">
-                                                        <h5>David Ade Smith</h5>
-                                                        <span class="position">Business Student</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Renvia Testimonial Item -->
-                                        <div class="renvia-testimonial-item style-two">
-                                            <div class="testimonial-content">
-                                                <div class="quote-ratings-wrap">
-                                                    <div class="quote">
-                                                        <img src="images/homepage/quote.png" alt="quote">
-                                                    </div>
-                                                    <div class="ratings">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star-half"></i>
-                                                    </div>
-                                                </div>
-                                                <p>“ IT companies stay abreast of emerging technologies and industry
-                                                    trends remain competitive and provide”</p>
-                                                <div class="author-thumb-item">
-                                                    <div class="author-thumb">
-                                                        <img src="images/homepage/author-img1.jpg" alt="author image">
-                                                    </div>
-                                                    <div class="author-info">
-                                                        <h5>David Ade Smith</h5>
-                                                        <span class="position">Business Student</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Testimonial Dots -->
-                                    <div class="testimonial-dots mt-50"></div>
-                                </div>
-                            </div>
-                        </div>
                         <!-- Clients Wrapper -->
-                        <div class="clients-wrapper pt-120">
+                        <div class="clients-wrapper">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <!-- Section Title -->
-                                    <div class="section-title mb-30" data-aos="fade-up" data-aos-duration="1000">
-                                        <h3>We take great pride in working with top-tier clientele.</h3>
+                                    <div class="partner-title-wrap mb-40" data-aos="fade-up" data-aos-duration="1000"
+                                        style="display: flex; align-items: center; gap: 30px;">
+                                        <h3
+                                            style="margin: 0; font-size: 24px; font-weight: 700; white-space: nowrap; color: var(--heading-color);">
+                                            Our Partner.</h3>
+                                        <div style="flex-grow: 1; height: 1px; background-color: #e5e5e5;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -907,76 +838,7 @@
                         </div>
                     </div>
                 </section><!--======  End Testimonial Section  ======-->
-                <!--======  Start Award Section  ======-->
-                <section class="renvia-award_two pt-115">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-8">
-                                <!-- Section Title -->
-                                <div class="section-title text-center mb-50">
-                                    <span class="sub-title" data-aos="fade-up" data-aos-duration="1000"><img
-                                            src="images/homepage/line1.png" alt="line">Achievements<img
-                                            src="images/homepage/line2.png" alt="line"></span>
-                                    <h2 class="text-anm">Recognitions we got</h2>
-                                    <p data-aos="fade-up" data-aos-duration="1200">We are a developer invested in our
-                                        customers’ success and improving <br> the communities we serve.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="award-wrapper" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="row">
-                                <div class="col-xl-3 col-md-6 col-sm-12 item-border">
-                                    <!-- Renvia Award Item -->
-                                    <div class="renvia-award-item style-two text-center mb-40">
-                                        <div class="icon">
-                                            <img src="images/homepage/award-img1.png" alt="award">
-                                        </div>
-                                        <div class="content">
-                                            <h4 class="title">Real Estate Super brand</h4>
-                                            <p>Most Promising Delivery</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-6 col-sm-12 item-border">
-                                    <!-- Renvia Award Item -->
-                                    <div class="renvia-award-item style-two text-center mb-40">
-                                        <div class="icon">
-                                            <img src="images/homepage/award-img2.png" alt="award">
-                                        </div>
-                                        <div class="content">
-                                            <h4 class="title">Real Estate Consultant</h4>
-                                            <p>Most Promising Delivery</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-6 col-sm-12 item-border">
-                                    <!-- Renvia Award Item -->
-                                    <div class="renvia-award-item style-two text-center mb-40">
-                                        <div class="icon">
-                                            <img src="images/homepage/award-img3.png" alt="award">
-                                        </div>
-                                        <div class="content">
-                                            <h4 class="title">Property Adviser of the Year</h4>
-                                            <p>Most Promising Delivery</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-6 col-sm-12 item-border">
-                                    <!-- Renvia Award Item -->
-                                    <div class="renvia-award-item style-two text-center mb-40">
-                                        <div class="icon">
-                                            <img src="images/homepage/award-img4.png" alt="award">
-                                        </div>
-                                        <div class="content">
-                                            <h4 class="title">Innovative Design Studio</h4>
-                                            <p>Most Promising Delivery</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section><!--======  End Award Section  ======-->
+
                 <!--======  Start Contact Section  ======-->
                 <section class="renvia-contact_one bg_cover pt-115 pb-120"
                     data-src="assets/images/home-two/bg/contact-bg.jpg">
@@ -998,7 +860,8 @@
                                             data-aos-duration="1000">
                                             <div class="icon-thumb">
                                                 <div class="thumb">
-                                                    <img src="images/homepage/support-1.jpg" alt="support">
+                                                    <img src="assets/images/home-two/contact/support-1.jpg"
+                                                        alt="support">
                                                 </div>
                                                 <div class="icon">
                                                     <i class="fa fa-phone-alt"></i>
@@ -1013,7 +876,8 @@
                                             data-aos-duration="1200">
                                             <div class="icon-thumb">
                                                 <div class="thumb">
-                                                    <img src="images/homepage/support-2.jpg" alt="support">
+                                                    <img src="assets/images/home-two/contact/support-2.jpg"
+                                                        alt="support">
                                                 </div>
                                                 <div class="icon">
                                                     <i class="fa fa-envelope"></i>
@@ -1097,8 +961,8 @@
                                             <div class="col-lg-12">
                                                 <div class="form-group text-center">
                                                     <button class="theme-btn style-one" type="submit"
-                                                        style="width: 100%;">Search Available Homes <i
-                                                            class="far fa-arrow-right"></i></button>
+                                                        style="width: 100%;">Search
+                                                        Available Homes <i class="far fa-arrow-right"></i></button>
                                                 </div>
                                             </div>
                                         </div>

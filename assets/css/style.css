@@ -6914,16 +6914,23 @@ transform: rotate(360deg);
 
 .renvia-client-item {
   cursor: pointer;
+  padding: 10px;
 }
 
-.renvia-client-item:hover .client-img img {
-  -webkit-filter: brightness(1);
-  filter: brightness(1);
+.renvia-client-item .client-img {
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.renvia-client-item:hover .client-img {
+  border-color: #ccc;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
 }
 
 .renvia-client-item .client-img img {
-  -webkit-filter: brightness(0);
-  filter: brightness(0);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin: 0 auto;
